@@ -1,0 +1,44 @@
+{
+  "name": "@magic-number/webpack-magic-number",
+  "version": "0.0.1",
+  "description": "魔数webpack插件",
+  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:magic-number/webpack-magic-number.git"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist/*",
+    "prebuild": "tnpm run clean; tnpm run lint",
+    "build": "tsc --build tsconfig.json",
+    "lint": "tslint --project ./tsconfig.json",
+    "lint:fix": "tslint -c tslint.json --fix --project ./tsconfig.json",
+    "doc": "typedoc --mode modules --tsconfig tsconfig.json --out ./docs ./src"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "magic number",
+    "自动测试",
+    "代码覆盖率",
+    "code coverage",
+    "webpack plugin"
+  ],
+  "author": "hao",
+  "license": "MIT",
+  "bugs": {
+    "url": "http://gitlab.alipay.net/magic-number/webpack-magic-number/issues"
+  },
+  "homepage": "http://gitlab.alipay.net/magic-number/webpack-magic-number",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@babel/parser": "^7.5.5",
+    "tslint": "^5.12.1",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.3.3",
+    "webpack-sources": "^1.4.1"
+  }
+}
