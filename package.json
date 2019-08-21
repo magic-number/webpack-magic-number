@@ -1,6 +1,6 @@
 {
   "name": "@magic-number/webpack-magic-number",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "魔数webpack插件",
   "main": "./dist/index.js",
   "repository": {
@@ -38,7 +38,9 @@
     "@babel/parser": "^7.5.5",
     "tslint": "^5.12.1",
     "typedoc": "^0.14.2",
-    "typescript": "^3.3.3",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
     "webpack-sources": "^1.4.1"
   }
 }
